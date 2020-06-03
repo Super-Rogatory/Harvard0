@@ -241,7 +241,7 @@ function love.update(dt)
         player1.dy = 0
     end
 
-    -- player 2
+    -- player 2 ( EDIT THIS TO CREATE THE ARTIFICIAL INTELLIGENCE)
     if love.keyboard.isDown('up') then
         player2.dy = -PADDLE_SPEED
     elseif love.keyboard.isDown('down') then
@@ -307,7 +307,7 @@ function love.draw()
     -- begin drawing with push, in our virtual resolution
     push:apply('start')
 
-    love.graphics.clear(40, 45, 52, 255)
+    love.graphics.clear(.16, .18, .21, 1)
     
     -- render different things depending on which part of the game we're in
     if gameState == 'start' then
